@@ -1,0 +1,17 @@
+{
+  "name": "blackguycoding-node-package",
+  "version": "7.8.9",
+  "description": "My very first node package",
+  "main": "03:Start-A-Project.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "nodeschool"
+  ],
+  "author": "Perrin Clark <BlackGuyCoding@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
