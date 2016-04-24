@@ -1,4 +1,4 @@
-/* Challenge #1 git it:
+/* Challenge #2 repository
 Code by Perrin Clark
 BlackGuyCoding@gmail.com
 https://www.nodeschool.io */
