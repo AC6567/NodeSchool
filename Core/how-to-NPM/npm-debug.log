@@ -1,0 +1,51 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/perrinclark/.nvm/versions/node/v0.12.4/bin/npm',
+1 verbose cli   'adduser' ]
+2 info using npm@3.8.7
+3 info using node@v0.12.4
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:blackguycoding',
+4 verbose adduser   name: 'blackguycoding',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'blackguycoding@gmail.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-04-24T17:53:40.370Z' }
+5 verbose request uri http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 8:53:40 PM
+8 verbose request id a671454de49aa3f2
+9 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+10 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND proxy.tcs.com
+11 info attempt registry request try #2 at 8:53:50 PM
+12 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+13 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND proxy.tcs.com
+14 info attempt registry request try #3 at 8:54:50 PM
+15 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+16 verbose request invalidating /Users/perrinclark/.npm/localhost_15443/-/user/org.couchdb.user_3Ablackguycoding on PUT
+17 verbose adduser back [ { [Error: getaddrinfo ENOTFOUND proxy.tcs.com]
+17 verbose adduser     code: 'ENOTFOUND',
+17 verbose adduser     errno: 'ENOTFOUND',
+17 verbose adduser     syscall: 'getaddrinfo',
+17 verbose adduser     hostname: 'proxy.tcs.com' },
+17 verbose adduser   undefined,
+17 verbose adduser   undefined ]
+18 verbose stack Error: getaddrinfo ENOTFOUND proxy.tcs.com
+18 verbose stack     at errnoException (dns.js:44:10)
+18 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:94:26)
+19 verbose cwd /Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM
+20 error Darwin 14.5.0
+21 error argv "node" "/Users/perrinclark/.nvm/versions/node/v0.12.4/bin/npm" "adduser"
+22 error node v0.12.4
+23 error npm  v3.8.7
+24 error code ENOTFOUND
+25 error errno ENOTFOUND
+26 error syscall getaddrinfo
+27 error network getaddrinfo ENOTFOUND proxy.tcs.com
+28 error network This is most likely not a problem with npm itself
+28 error network and is related to network connectivity.
+28 error network In most cases you are behind a proxy or have bad network settings.
+28 error network
+28 error network If you are behind a proxy, please make sure that the
+28 error network 'proxy' config is set properly.  See: 'npm help config'
+29 verbose exit [ 1, true ]
