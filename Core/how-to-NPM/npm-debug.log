@@ -1,76 +1,51 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'node',
 1 verbose cli   '/Users/perrinclark/.nvm/versions/node/v0.12.4/bin/npm',
-1 verbose cli   'publish' ]
+1 verbose cli   'adduser' ]
 2 info using npm@3.8.7
 3 info using node@v0.12.4
-4 verbose publish [ '.' ]
-5 silly cache add args [ '.', null ]
-6 verbose cache add spec .
-7 silly cache add parsed spec { raw: '.',
-7 silly cache add   scope: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: '/Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package.tgz not in flight; packing
-9 verbose correctMkdir /Users/perrinclark/.npm correctMkdir not in flight; initializing
-10 info lifecycle blackguycoding-node-package@7.8.9~prepublish: blackguycoding-node-package@7.8.9
-11 silly lifecycle blackguycoding-node-package@7.8.9~prepublish: no script for prepublish, continuing
-12 verbose tar pack [ '/Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package.tgz',
-12 verbose tar pack   '/Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM' ]
-13 verbose tarball /Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package.tgz
-14 verbose folder /Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM
-15 verbose addLocalTarball adding from inside cache /Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package.tgz
-16 verbose correctMkdir /Users/perrinclark/.npm correctMkdir not in flight; initializing
-17 silly cache afterAdd blackguycoding-node-package@7.8.9
-18 verbose afterAdd /Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package/package.json not in flight; writing
-19 verbose correctMkdir /Users/perrinclark/.npm correctMkdir not in flight; initializing
-20 verbose afterAdd /Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package/package.json written
-21 silly publish { name: 'blackguycoding-node-package',
-21 silly publish   version: '7.8.9',
-21 silly publish   description: 'My very first node package',
-21 silly publish   main: '03:Start-A-Project.js',
-21 silly publish   scripts: { test: 'node test.js' },
-21 silly publish   keywords: [ 'nodeschool' ],
-21 silly publish   author: { name: 'Perrin Clark', email: 'BlackGuyCoding@gmail.com' },
-21 silly publish   license: 'ISC',
-21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
-21 silly publish   readme: '#NodeSchool Solutions\n\nOpen source lesson solutions associated with  [NodeSchool](http://nodeschool.io/).\n\nNodeSchool is an open source workshops that teach web software skills (fundamentals skills for NodeJS) that you can complete at your own pace using your terminal & text editor. I am using Atom + iTerm to complete these challenges.\n\nThe How To NPM workshop does not include any actual code rather it includes interactive challenges to teach you how to use npm. I have included this repo here to maintain my file structure.\n',
-21 silly publish   readmeFilename: 'README.md',
-21 silly publish   _id: 'blackguycoding-node-package@7.8.9',
-21 silly publish   _shasum: '5e3db72b82a4a016fa4fe809dcbf95986ba70d08',
-21 silly publish   _from: '.' }
-22 verbose getPublishConfig undefined
-23 silly mapToRegistry name blackguycoding-node-package
-24 silly mapToRegistry using default registry
-25 silly mapToRegistry registry http://localhost:15443/
-26 silly mapToRegistry data { raw: 'blackguycoding-node-package',
-26 silly mapToRegistry   scope: null,
-26 silly mapToRegistry   name: 'blackguycoding-node-package',
-26 silly mapToRegistry   rawSpec: '',
-26 silly mapToRegistry   spec: 'latest',
-26 silly mapToRegistry   type: 'tag' }
-27 silly mapToRegistry uri http://localhost:15443/blackguycoding-node-package
-28 verbose publish registryBase http://localhost:15443/
-29 silly publish uploading /Users/perrinclark/.npm/blackguycoding-node-package/7.8.9/package.tgz
-30 verbose stack Error: auth required for publishing
-30 verbose stack     at CachingRegistryClient.publish (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
-30 verbose stack     at /Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/publish.js:137:14
-30 verbose stack     at mapToRegistry (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
-30 verbose stack     at publish_ (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/publish.js:106:3)
-30 verbose stack     at Array.<anonymous> (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
-30 verbose stack     at LOOP (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
-30 verbose stack     at LOOP (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
-30 verbose stack     at chain (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
-30 verbose stack     at /Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/publish.js:72:5
-30 verbose stack     at RES (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
-31 verbose cwd /Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM
-32 error Darwin 14.5.0
-33 error argv "node" "/Users/perrinclark/.nvm/versions/node/v0.12.4/bin/npm" "publish"
-34 error node v0.12.4
-35 error npm  v3.8.7
-36 error code ENEEDAUTH
-37 error need auth auth required for publishing
-38 error need auth You need to authorize this machine using `npm adduser`
-39 verbose exit [ 1, true ]
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:blackguycoding',
+4 verbose adduser   name: 'blackguycoding',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'blackguycoding@gmail.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-04-25T04:53:49.675Z' }
+5 verbose request uri http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 7:53:49 AM
+8 verbose request id b2ca0bb8263fdc2b
+9 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+10 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND proxy.tcs.com
+11 info attempt registry request try #2 at 7:54:00 AM
+12 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+13 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND proxy.tcs.com
+14 info attempt registry request try #3 at 7:55:00 AM
+15 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+16 verbose request invalidating /Users/perrinclark/.npm/localhost_15443/-/user/org.couchdb.user_3Ablackguycoding on PUT
+17 verbose adduser back [ { [Error: getaddrinfo ENOTFOUND proxy.tcs.com]
+17 verbose adduser     code: 'ENOTFOUND',
+17 verbose adduser     errno: 'ENOTFOUND',
+17 verbose adduser     syscall: 'getaddrinfo',
+17 verbose adduser     hostname: 'proxy.tcs.com' },
+17 verbose adduser   undefined,
+17 verbose adduser   undefined ]
+18 verbose stack Error: getaddrinfo ENOTFOUND proxy.tcs.com
+18 verbose stack     at errnoException (dns.js:44:10)
+18 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:94:26)
+19 verbose cwd /Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM
+20 error Darwin 14.5.0
+21 error argv "node" "/Users/perrinclark/.nvm/versions/node/v0.12.4/bin/npm" "adduser"
+22 error node v0.12.4
+23 error npm  v3.8.7
+24 error code ENOTFOUND
+25 error errno ENOTFOUND
+26 error syscall getaddrinfo
+27 error network getaddrinfo ENOTFOUND proxy.tcs.com
+28 error network This is most likely not a problem with npm itself
+28 error network and is related to network connectivity.
+28 error network In most cases you are behind a proxy or have bad network settings.
+28 error network
+28 error network If you are behind a proxy, please make sure that the
+28 error network 'proxy' config is set properly.  See: 'npm help config'
+29 verbose exit [ 1, true ]
