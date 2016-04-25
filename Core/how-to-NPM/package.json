@@ -9,7 +9,7 @@
   "keywords": [
     "nodeschool"
   ],
-  "author": "Perrin Clark <BlackGuyCoding@gmail.com>",
+  "author": "P. Clark <BlackGuyCoding@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@linclark/pkg": "^1.0.2"

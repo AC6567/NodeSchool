@@ -10,42 +10,41 @@
 4 verbose adduser   email: 'blackguycoding@gmail.com',
 4 verbose adduser   type: 'user',
 4 verbose adduser   roles: [],
-4 verbose adduser   date: '2016-04-25T04:53:49.675Z' }
-5 verbose request uri http://localhost:15443/-/user/org.couchdb.user:blackguycoding
+4 verbose adduser   date: '2016-04-25T09:29:11.334Z' }
+5 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:blackguycoding
 6 verbose request new user, so can't send auth
-7 info attempt registry request try #1 at 7:53:49 AM
-8 verbose request id b2ca0bb8263fdc2b
-9 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
-10 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND proxy.tcs.com
-11 info attempt registry request try #2 at 7:54:00 AM
-12 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
-13 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND proxy.tcs.com
-14 info attempt registry request try #3 at 7:55:00 AM
-15 http request PUT http://localhost:15443/-/user/org.couchdb.user:blackguycoding
-16 verbose request invalidating /Users/perrinclark/.npm/localhost_15443/-/user/org.couchdb.user_3Ablackguycoding on PUT
-17 verbose adduser back [ { [Error: getaddrinfo ENOTFOUND proxy.tcs.com]
-17 verbose adduser     code: 'ENOTFOUND',
-17 verbose adduser     errno: 'ENOTFOUND',
-17 verbose adduser     syscall: 'getaddrinfo',
-17 verbose adduser     hostname: 'proxy.tcs.com' },
+7 info attempt registry request try #1 at 12:29:11 PM
+8 verbose request id bb83408bff1cc7b3
+9 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:blackguycoding
+10 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.company.com
+11 info attempt registry request try #2 at 12:29:21 PM
+12 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:blackguycoding
+13 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.company.com
+14 info attempt registry request try #3 at 12:30:21 PM
+15 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:blackguycoding
+16 verbose request invalidating /Users/perrinclark/.npm/registry.npmjs.org/-/user/org.couchdb.user_3Ablackguycoding on PUT
+17 verbose adduser back [ { [Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.company.com] code: 'ECONNRESET' },
 17 verbose adduser   undefined,
 17 verbose adduser   undefined ]
-18 verbose stack Error: getaddrinfo ENOTFOUND proxy.tcs.com
-18 verbose stack     at errnoException (dns.js:44:10)
-18 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:94:26)
+18 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.company.com
+18 verbose stack     at ClientRequest.onError (/Users/perrinclark/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:176:17)
+18 verbose stack     at ClientRequest.g (events.js:199:16)
+18 verbose stack     at ClientRequest.emit (events.js:107:17)
+18 verbose stack     at Socket.socketErrorListener (_http_client.js:271:9)
+18 verbose stack     at Socket.emit (events.js:107:17)
+18 verbose stack     at net.js:950:16
+18 verbose stack     at process._tickCallback (node.js:355:11)
 19 verbose cwd /Users/perrinclark/Coding/NodeSchool/Core/how-to-NPM
 20 error Darwin 14.5.0
 21 error argv "node" "/Users/perrinclark/.nvm/versions/node/v0.12.4/bin/npm" "adduser"
 22 error node v0.12.4
 23 error npm  v3.8.7
-24 error code ENOTFOUND
-25 error errno ENOTFOUND
-26 error syscall getaddrinfo
-27 error network getaddrinfo ENOTFOUND proxy.tcs.com
-28 error network This is most likely not a problem with npm itself
-28 error network and is related to network connectivity.
-28 error network In most cases you are behind a proxy or have bad network settings.
-28 error network
-28 error network If you are behind a proxy, please make sure that the
-28 error network 'proxy' config is set properly.  See: 'npm help config'
-29 verbose exit [ 1, true ]
+24 error code ECONNRESET
+25 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.company.com
+26 error network This is most likely not a problem with npm itself
+26 error network and is related to network connectivity.
+26 error network In most cases you are behind a proxy or have bad network settings.
+26 error network
+26 error network If you are behind a proxy, please make sure that the
+26 error network 'proxy' config is set properly.  See: 'npm help config'
+27 verbose exit [ 1, true ]
